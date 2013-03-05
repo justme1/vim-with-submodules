@@ -30,3 +30,5 @@ if you want to add another plugin:
     git submodule add repo bundle/plugin name
     git add .
     git commit -m 'plugin added comment'
+
+for more instruction visit: http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/

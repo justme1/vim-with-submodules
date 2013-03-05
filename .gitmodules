@@ -1,0 +1,3 @@
+[submodule "bundle/Insertlessly"]
+	path = bundle/Insertlessly
+	url = https://github.com/dahu/Insertlessly.git

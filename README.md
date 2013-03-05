@@ -26,6 +26,7 @@ Upgrading all bundled plugins:
 NOTE:
 
 if you want to add another plugin:
+
     git submodule add repo bundle/plugin name
     git add .
     git commit -m 'plugin added comment'

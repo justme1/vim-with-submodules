@@ -46,3 +46,6 @@
 [submodule "bundle/vimple"]
 	path = bundle/vimple
 	url = https://github.com/dahu/vimple.git
+[submodule "bundle/ruby-runner"]
+	path = bundle/ruby-runner
+	url = https://github.com/henrik/vim-ruby-runner.git

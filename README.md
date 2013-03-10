@@ -34,6 +34,7 @@ if you want to add another plugin:
 if you want to add changes to a specific plugin, you need to fork it: https://help.github.com/articles/fork-a-repo
     
 remove the submodule:
+
     Delete the relevant section from the .gitmodules file.
     Delete the relevant section from .git/config.
     Run git rm --cached path_to_submodule (no trailing slash).

@@ -13,6 +13,7 @@ set nocompatible
 colorscheme xoria256
 set number
 "source ~/.vim/vimrc
+
 set guifont=Menlo\ Regular:h16
 set t_Co=256
 set cursorline
@@ -51,7 +52,7 @@ nnoremap <C-L> :nohls<CR><C-L>
 
 
 noremap <c-d> <esc>ddi
-:nnoremap <leader>sv :source $MYVIMRC<cr>
+"nnoremap <leader>sv :source $MYVIMRC<cr>
 
 noremap <leader>d :redraw!<CR>
 noremap <leader>] :sh<CR>
@@ -85,6 +86,9 @@ noremap <leader><tab>   :NERDTreeToggle<CR>
 noremap  <leader>p      :CtrlP<CR>
 noremap y "*y
 noremap Y "*Y
+noremap p "*p
+noremap P "*P
+
 noremap <leader>q :q!<CR>
 noremap <leader>b :bd!<CR>
 
@@ -104,9 +108,10 @@ filetype plugin on    " Enable filetype-specific plugins
 compiler ruby         " Enable compiler support for rubyaa
 "}}}
 " don't highlight search result {{{
-set nohlsearch
+set hlsearch
 "}}}
 "default indent and folding settings {{{
+
 set shiftwidth=4
 set softtabstop=4
 set expandtab
@@ -133,7 +138,7 @@ let g:NERDTreeWinSize = 40
 "    set colorcolumn=+1 "mark the ideal max text width
 "endif
 
-set formatoptions-=o "dont continue comments when pushing o/O
+"set formatoptions-=o "dont continue comments when pushing o/O
 
 "vertical/horizontal scroll off settings
 set scrolloff=3
@@ -347,4 +352,6 @@ endfunction
 autocmd filetype svn,*commit* setlocal spell
 "}}}
 
+:set formatoptions-=cro
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 " }}}

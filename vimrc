@@ -57,6 +57,7 @@ noremap <c-d> <esc>ddi
 noremap <leader>d :redraw!<CR>
 noremap <leader>] :sh<CR>
 noremap - dd
+set clipboard+=unnamed
 imap jj <Esc>
 
 nnoremap <left> :vertical resize -5<cr>
@@ -355,3 +356,6 @@ autocmd filetype svn,*commit* setlocal spell
 :set formatoptions-=cro
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 " }}}
+
+
+
